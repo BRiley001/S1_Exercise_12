@@ -35,15 +35,15 @@
 var thisDay = new Date("August 24, 2018");
 
 /* Write the calendar to the element with the id "calendar" */
-document.getElementById("calendar").innerHMTL = createCalendar(thisDay);
+document.getElementById("calendar").innerHTML = createCalendar(thisDay);
 
 // Function to generate the calendar table
 
 function createCalendar(calDate) {
-      var calendarHTML = "<table id='calendar_table'>";
+      var calendarHTML = "<table id='calendar_table'> ";
       calendarHTML += calCaption(calDate);
       calendarHTML += "</table>";
-      return calendarHMTL;
+      return calendarHTML;
 }
 
 //Function to write the calendar caption
